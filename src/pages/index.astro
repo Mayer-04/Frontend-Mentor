@@ -1,12 +1,35 @@
 ---
+import Header from "@/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import RecipeDescription from "@/components/RecipeDescription.astro";
+import Instructions from "@/components/Instructions.astro";
+import Nutrition from "@/components/Nutrition.astro";
+import Footer from "@/components/Footer.astro";
 
 const title = "Welcome to Astro.";
 const description = "The official Astro website";
 ---
 
-<Layout title="Welcome to Astro." description={description}>
-  <main>
-    <h1>{title}</h1>
-  </main>
+<Layout title={title} description={description}>
+  <div class="container">
+    <Header />
+    <main>
+      <RecipeDescription />
+      <hr />
+      <Instructions />
+      <hr />
+      <Nutrition />
+      <hr />
+      <Footer />
+    </main>
+  </div>
 </Layout>
+
+<style>
+  .container {
+    max-width: 800px;
+    background-color: var(--White);
+    padding: 40px;
+    border-radius: 1rem;
+  }
+</style>
