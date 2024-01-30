@@ -4,12 +4,62 @@
     The table below shows nutritional values per serving without the additional
     fillings.
   </p>
-  <table></table>
+  <table class="nutrition-table">
+    <tbody>
+      <tr>
+        <td class="column-title">Calories</td>
+        <td class="column-value">277kcal</td>
+      </tr>
+
+      <tr>
+        <td class="column-title">Carbs</td>
+        <td class="column-value">0g</td>
+      </tr>
+
+      <tr>
+        <td class="column-title">Protein</td>
+        <td class="column-value">20g</td>
+      </tr>
+
+      <tr>
+        <td class="column-title">Fat</td>
+        <td class="column-value">22g</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
 <style>
   .nutrition-title {
+    font-weight: 400;
     color: var(--nutmeg);
     margin-bottom: 1rem;
+  }
+
+  .nutrition-description {
+    margin-bottom: 1rem;
+  }
+
+  .nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid var(--light-grey);
+  }
+
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .column-title {
+    padding: 10px 0 10px 1.875rem;
+  }
+
+  .column-value {
+    padding: 10px 1.5625rem 5px 0;
+    font-weight: 700;
+    color: var(--nutmeg);
   }
 </style>
