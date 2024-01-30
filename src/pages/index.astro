@@ -13,7 +13,7 @@ const description = "The official Astro website";
 <Layout title={title} description={description}>
   <div class="container">
     <Header />
-    <main>
+    <main class="main">
       <RecipeDescription />
       <hr />
       <Instructions />
@@ -29,12 +29,15 @@ const description = "The official Astro website";
   .container {
     max-width: 45rem;
     background-color: var(--white);
-    padding: 2.5rem;
     border-radius: 1rem;
-  }
 
-  hr {
-    margin: 2rem 0;
-    border: 1px solid var(--light-grey);
+    & .main {
+      padding: 1.5rem 2.5rem;
+
+      & hr {
+        margin: 2rem 0;
+        border: 1px solid var(--light-grey);
+      }
+    }
   }
 </style>

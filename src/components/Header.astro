@@ -6,11 +6,21 @@
 
 <style>
   .header {
-    margin-bottom: 1.875rem;
+    padding: 0;
   }
 
   img {
     aspect-ratio: 164 / 75;
-    border-radius: 1rem;
+    border-radius: 0;
+  }
+
+  @media (width > 768px) {
+    .header {
+      padding: 2.5rem 2.5rem 0 2.5rem;
+    }
+
+    img {
+      border-radius: 1rem;
+    }
   }
 </style>
