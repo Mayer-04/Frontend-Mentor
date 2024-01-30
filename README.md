@@ -1,14 +1,24 @@
-# Frontend Mentor Challenge
+# Frontend Mentor Recipe Page 🖼️
 
-## 🧞 Commands
+Este proyecto es una página web creada con HTML, CSS y Astro recreando un diseño de Frontend Mentor para practicar y mejorar mis habilidades de diseño web.
 
-All commands are run from the root of the project, from a terminal:
+Todos los derechos reservados al creador original [Frontend Mentor](https://www.frontendmentor.io/challenges).
 
-| Command                    | Action                                           |
-| :------------------------- | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm run dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm run build`           | Build your production site to `./dist/`          |
-| `pnpm run preview`         | Preview your build locally, before deploying     |
-| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm run astro -- --help` | Get help using the Astro CLI                     |
+## Dependencias
+
+### Requisitos Previos
+
+- [Node.js](https://nodejs.org/en) (v14.0.0 o superior)
+- [pnpm](https://pnpm.io/es/) (puedes instalarlo globalmente con `npm install -g pnpm`)
+
+### Instalación
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/Mayer-04/Frontend-Mentor.git
+   ```
+
+2. Instalar dependencias `pnpm install`
+3. Ejecuta el proyecto en modo desarrollo: `pnpm run dev`
+4. Accede a la API desde tu navegador web: `http://localhost:4321`
