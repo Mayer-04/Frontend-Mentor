@@ -1,7 +1,7 @@
-<section>
-  <h2>Instructions</h2>
+<section class="instructions">
+  <h2 class="instructions-title">Instructions</h2>
 
-  <ul>
+  <ol class="instructions-list">
     <li>
       <strong>Beat the eggs:</strong>
       In a bowl, beat the eggs with a pinch of salt and pepper until they are well
@@ -30,5 +30,28 @@
       <strong>Enjoy:</strong>
       Serve hot, with additional salt and pepper if needed.
     </li>
-  </ul>
+  </ol>
 </section>
+
+<style>
+  .instructions-title {
+    color: var(--nutmeg);
+    margin-bottom: 1rem;
+  }
+
+  .instructions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1.25rem;
+  }
+
+  .instructions-list li {
+    padding-left: 0.25rem;
+  }
+
+  .instructions-list li::marker {
+    color: var(--nutmeg);
+    font-weight: 700;
+  }
+</style>
