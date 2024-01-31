@@ -39,10 +39,11 @@
 
 <style>
   .recipe-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.25;
     font-weight: 400;
     color: var(--dark-charcoal);
-    margin: 16px 0;
+    margin: 1.125rem 0;
   }
 
   .recipe-description {
@@ -79,6 +80,7 @@
   }
 
   .ingredients-title {
+    font-size: 1.75rem;
     font-weight: 400;
     color: var(--nutmeg);
     margin-bottom: 1rem;
@@ -98,5 +100,14 @@
   .ingredients-list li::marker {
     font-size: 0.875rem;
     color: var(--nutmeg);
+  }
+
+  @media (width > 768px) {
+    .recipe-title {
+      font-size: 2.5rem;
+      color: var(--dark-charcoal);
+      margin: 1rem 0;
+      font-weight: 400;
+    }
   }
 </style>
